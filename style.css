@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap');
+
+* {
+	font-family: 'Nunito', sans-serif;
+}
+
+body {
+	background: rgb(22, 22, 22);
+}
+
+body P,
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: #fff;
+	font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+	font-weight: 600;
+}
+
+/* Navbar */
+.title {
+	font-weight: 600;
+	color: #d03137;
+}
+
+span.navbar-toggler-icon {
+	background-color: #d03137;
+	border-radius: 3px;
+}
+
+nav {
+	background-color: rgb(20, 20, 20);
+}
+
+nav a:visited,
+a:hover {
+	color: #FFF !important;
+}
+
+
+.nav-item {
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: 2px;
+	list-style: none;
+	margin: 0 15px;
+	text-transform: uppercase;
+}
+
+.nav-item a {
+	position: relative;
+	text-decoration: none;
+	color: #e1e1e1;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	padding: 0 10px;
+}
+
+.nav-item a:after {
+	content: "";
+	position: absolute;
+	background-color: #d03137;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s;
+}
+
+.nav-item a:hover {
+	color: #ffffff;
+}
+
+.nav-item a:hover:after {
+	width: 100%;
+}
+
+/*End Nav*/
+
+
+/*Swiper*/
+.swiper {
+	width: 100%;
+	height: 100vh;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.text-slider {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+}
+
+.text-slider h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+
+.text-slider p {
+	width: 90%;
+	margin: auto;
+	font-size: 22px;
+	line-height: 1.9;
+}
+
+.swiper-slide::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+}
+
+span.swiper-pagination-bullet-active {
+	background-color: #d03137;
+}
+
+div.swiper-button-prev,
+div.swiper-button-next {
+	color: #d03137;
+}
+
+div.swiper-button-prev::after,
+div.swiper-button-next::after {
+	font-size: 2em;
+}
+
+/*End Swiper*/
+
+
+/* About*/
+
+img.img-fluid {
+	border-radius: 10px;
+	margin-bottom: 35px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.sobre-text p {
+	text-align: justify;
+}
+
+.section-padding {
+	padding: 125px 0;
+}
+
+/*End Sobre*/
+
+/* Services */
+.LerMais {
+	background-color: rgb(30, 30, 30) !important;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+.card-title1 {
+	color: #FFF;
+}
+
+/* End Services */
+
+
+/* Team */
+
+.fundocard {
+	background-color: #dbdbdbdb;
+}
+
+.time .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-text,
+.card-title {
+	color: #000;
+}
+
+.rounded-circle {
+	border-radius: 50% !important;
+	width: 140px !important;
+	height: 130px !important;
+}
+
+/*End Team*/
+
+
+/*Buttons*/
+.btf {
+	background-color: rgb(20, 20, 20) !important;
+	color: #fff;
+	padding: 15px;
+	border-radius: 10px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+.cfr {
+	background-color: rgb(30, 30, 30) !important;
+	border-radius: 10px;
+	width: 60%;
+}
+
+
+/* Responsividade*/
+
+@media only screen and (max-width: 999px) {
+	.about-text {
+		padding-top: 50px;
+	}
+
+	.nav-item a:hover:after {
+		width: 0;
+	}
+
+	.navbar-nav {
+		text-align: center;
+	}
+
+	.card {
+		margin-bottom: 30px;
+	}
+
+	.cfr {
+		width: 100%;
+	}
+}
+
+
+footer {
+	background-color: rgb(26, 26, 26) !important;
+}
